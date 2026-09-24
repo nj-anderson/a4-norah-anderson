@@ -1,31 +1,33 @@
-Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template
+Assignment 4 - Components
 ===
 
-Due: September 15th, by 1:59 PM.
+Due: September 25th, by 1:59 PM.
 
+For this assignment you will re-implement the client side portion of *either* A2 or A3 using either React or Svelte components. If you choose A3 you only need to use components for the data display / updating; you can leave your login UI as is.
 
-## Grocery List Application
+[Svelte Tutorial](https://github.com/cs-4241-26a/cs-4241-26a.github.io/blob/main/using.svelte.md)  
+[React Tutorial](https://github.com/cs-4241-26a/cs-4241-26a.github.io/blob/main/using.react.md)
 
-https://a3-norahanderson.onrender.com/
+This project can be implemented on any hosting service (Glitch, DigitalOcean, Heroku etc.), however, you must include all files in your GitHub repo so that the course staff can view them.
 
-The goal of this application is to create a grocery list that allows users to add, edit, and delete items. The application also includes a feature to mark items as purchased.
+Deliverables
+---
 
-The main challenges I faced during the creation of this application regarded CSS positioning and setting up OAuth authentication.
+Do the following to complete this assignment:
 
-I chose to implement OAuth authentication via the GitHub strategy because my Software Engineering group used OAuth on our project. I was somewhat familiar with it and I liked being able to sign in without creating an account.
+1. Implement your project with the above requirements.
+3. Test your project to make sure that when someone goes to your main page on Render/Heroku/etc., it displays correctly.
+4. Ensure that your project has the proper naming scheme `a4-firstname-lastname` so we can find it.
+5. Fork this repository and modify the README to the specifications below. Be sure to add *all* project files.
+6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a4-firstname-lastname`.
 
-Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
+Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
+---
 
-I am not that familiar with CSS frameworks, so I chose to use Bootstrap because it is widely used and was recommended to me when I asked ChatGPT what I should use. I made some modifications to the CSS framework via custom CSS to fit the design of my application.
+## Your Web Application Title
 
-Bootstrap was used for form controls, buttons, and icons. I also wrote custom CSS to modify the Bootstrap styling and create the grocery-list layout, including the colors, fonts, spacing, borders, cards, and responsive flexbox layout.
+your hosting link e.g. http://a4-charlieroberts.me
 
-## Technical Achievements
-- **Tech Achievement 1**: I used OAuth authentication via the GitHub strategy. This was difficult because I had to completely learn and implement it on my own. I also initially implemented it using Google OAuth, but I had to switch to GitHub OAuth after deciding I was not going to implement traditional username/passsword functionality as well (ran out of time)
+Include a very brief summary of your project here and what you changed / added to assignment #3. Briefly (3–4 sentences) answer the following question: did the new technology improve or hinder the development experience?
 
-### AI Usage
-
-- Used ChatGPT to help me choose a CSS framework
-- Used ChatGPT for some small tweaks to my custom CSS. For example, styling a checkbox.
-- Used ChatGPT to teach me how to implement OAuth authentication
-- Used ChatGPT to keep track of my requirement progress.
+Unlike previous assignments, this assignment will be solely graded on whether or not you successfully complete it. Partial credit will be generously given.
