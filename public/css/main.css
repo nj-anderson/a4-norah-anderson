@@ -1,0 +1,262 @@
+/* =========================
+   General
+   ========================= */
+
+body {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+  text-align: center;
+  background: #f8f3e9;
+  padding: 35px 0;
+}
+
+header h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bolder;
+  font-size: 60px;
+  margin: 0;
+}
+
+
+/* =========================
+   Add Grocery Item Form
+   ========================= */
+
+.add-item-form {
+  background: #ffffff;
+  border: 2px solid #e5e1da;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.add-item-form h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+#add-item-form-container {
+  width: 55%;
+  margin: 50px auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+#add-item-form-container form {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.add-item-form input[type="text"] {
+  border: 2px solid #e5e1da;
+  border-radius: 8px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+}
+
+label {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#item {
+  width: 200px;
+}
+
+.purchased-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.purchased-field .form-check-input {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  top: -2px;
+}
+
+#is_purchased {
+  appearance: none;
+  width: 43px;
+  height: 43px;
+  border: 2px solid #e5e1da;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+#is_purchased:checked {
+  background: #6f9876;
+  border-color: #6f9876;
+}
+
+#is_purchased:checked::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  left: 13px;
+  top: 9px;
+}
+
+.submit-button {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  background: #6f9876 !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 22px;
+}
+
+
+/* =========================
+   Shopping Lists
+   ========================= */
+
+#shopping-lists-container {
+  width: 61%;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+.shopping-list-container {
+  background: #fdf9f2;
+  border: 2px solid #e5dfd5;
+  border-radius: 12px;
+  width: 40%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-list-container.to-buy {
+  background: #fdf9f2;
+  border: 2px solid #e5dfd5;
+}
+
+.shopping-list-container:not(.to-buy) {
+  background: #f1f8ed;
+  border-color: #c9dec2;
+}
+
+
+.shopping-list-container ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+  width: 80%;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e1da;
+  padding: 10px 0;
+}
+
+.grocery-item #delete-button {
+  margin-left: auto;
+}
+
+.grocery-item input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #b5b5b5;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.grocery-item input[type="checkbox"]:checked {
+  background: #6f9876;
+  border-color: #6f9876;
+}
+
+.grocery-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 7px;
+  top: 3px;
+}
+
+
+/* =========================
+   Fonts
+   ========================= */
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.handwriting {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+}
+
+.list-heading {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  align-self: center;
+  width: 80%;
+  padding: 20px 0 10px 0;
+  margin: 0 0 15px 0;
+  border-bottom: 3px solid #e0d5ca;
+}
+
+.shopping-list-container:not(.to-buy) .list-heading {
+  border-bottom-color: #a8c9a0;
+}
+
+
+/* =========================
+   Delete Button
+   ========================= */
+
+#delete-button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  margin-left: auto;
+  color: dimgrey;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

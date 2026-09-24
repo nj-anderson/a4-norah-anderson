@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>CS4241 Assignment 2</title>
+    <meta charset='utf-8' />
+    <script src='js/main.js'></script>
+    <link rel='stylesheet' href='css/main.css' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- get rid of favicon error -->
+    <link rel='icon' href='data:;base64,iVBORw0KGgo=' />
+  </head>
+  <body>
+
+  <header>
+    <h1>My Grocery List</h1>
+    <a href="/logout" class="btn btn-secondary logout-button">
+      Log out
+    </a>
+  </header>
+
+  <div id="add-item-form-container">
+    <div class="add-item-form">
+      <h2>Add Grocery Item</h2>
+
+      <form class="fjalla-one-regular">
+
+        <div class="form-field">
+          <label for="item">Item</label>
+          <input type="text" id="item" class="form-control">
+        </div>
+
+        <div class="form-field">
+          <label for="quantity">Quantity</label>
+          <input type="text" id="quantity" class="form-control">
+        </div>
+
+        <div class="form-field purchased-field">
+          <label for="is_purchased">Purchased?</label>
+          <input type="checkbox" id="is_purchased" class="form-check-input" aria-label="Mark grocery item as purchased">
+        </div>
+
+        <button class="submit-button btn btn-primary" aria-label="Add grocery item">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <div id='shopping-lists-container'>
+    <div id='shopping-list-to-buy' class='shopping-list-container to-buy'>
+      <h2 class="list-heading">To Buy</h2>
+      <ul id='shopping-list-to-buy-items' class="handwriting">
+      </ul>
+    </div>
+    <div id='shopping-list-purchased' class='shopping-list-container'>
+      <h2 class="list-heading">Purchased</h2>
+      <ul id='shopping-list-purchased-items' class="handwriting">
+      </ul>
+    </div>
+  </div>
+
+  </body>
+</html>
