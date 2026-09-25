@@ -102,7 +102,7 @@ app.use(express.static(path.join(__dirname, "public"), { index: false }));
 
 app.get("/", function(request, response) {
     if (request.isAuthenticated()) {
-        response.sendFile(path.join(__dirname, "public", "index.html"));
+        response.sendFile(path.join(__dirname, "public", "react", "index.html"));
     }
     else {
         response.sendFile(path.join(__dirname, "public", "login.html"));
